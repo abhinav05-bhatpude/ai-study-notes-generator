@@ -2,7 +2,7 @@ import React from 'react'
 
 const NoteCard = (props) => {
   return (
-    <div className="bg-slate-800 p-6 rounded-2xl text-white max-w-2xl mt-10">
+    <div className="bg-slate-800 p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl transition duration-300">
         <h2 className="text-2xl font-bold mb-4">
             {props.title}
         </h2>
