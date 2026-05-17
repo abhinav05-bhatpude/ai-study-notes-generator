@@ -1,4 +1,5 @@
 import React from 'react'
+import NoteForm from '../components/NoteForm'
 
 const Home = () => {
   return (
@@ -11,9 +12,9 @@ AI Study Notes Generator 📚
 Generate smart study notes using AI and improve your learning experience.
     </p>
 
-    <button className="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-xl text-white mt-10">
- Generate Notes
-    </button>
+  <div className="mt-10 w-full flex justify-center">
+  <NoteForm />
+</div>
    </div>
   )
 }
