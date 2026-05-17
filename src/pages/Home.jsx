@@ -16,7 +16,7 @@ Generate smart study notes using AI and improve your learning experience.
   <div className="mt-10 w-full flex justify-center">
   <NoteForm />
 </div>
-<NoteCard/>
+<NoteCard title="Recursion Notes" content="Recursion is a programing technique where a function calls itself repeatedly to solve a problem."/>
    </div>
   )
 }
