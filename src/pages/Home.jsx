@@ -1,5 +1,6 @@
 import React from 'react'
 import NoteForm from '../components/NoteForm'
+import NoteCard from '../components/NoteCard'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ Generate smart study notes using AI and improve your learning experience.
   <div className="mt-10 w-full flex justify-center">
   <NoteForm />
 </div>
+<NoteCard/>
    </div>
   )
 }
