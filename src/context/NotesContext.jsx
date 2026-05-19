@@ -8,6 +8,8 @@ export const NotesProvider = ({children}) => {
 
     const [difficulty,setDifficulty] = useState("Beginner");
 
+    const [notes, setNotes] = useState("");
+
     return (
         <NotesContext.Provider
         value={{
@@ -15,6 +17,8 @@ export const NotesProvider = ({children}) => {
             setTopic,
             difficulty,
             setDifficulty,
+            notes,
+            setNotes,
         }}
         >
             {children}
