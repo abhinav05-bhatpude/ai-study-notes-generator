@@ -9,6 +9,7 @@ const NoteForm = () => {
   difficulty,
   setDifficulty,
   generateNotes,
+  loading,
 } = useContext(NotesContext);
   return (
 
@@ -32,8 +33,8 @@ const NoteForm = () => {
 
       <button
         className="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-xl text-white mt-6 w-full"
-      onClick={generateNotes}>
-        Generate Notes
+      onClick={generateNotes} disabled={loading}>
+       {loading ? "Generating..." : "Generate Notes"}
       </button>
 
     </div>
