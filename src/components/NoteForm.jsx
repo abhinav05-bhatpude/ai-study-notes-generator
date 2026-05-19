@@ -32,7 +32,7 @@ const NoteForm = () => {
       </select>
 
       <button
-        className="bg-red-500 hover:bg-red-600 transition px-6 py-3 rounded-xl text-white mt-6 w-full"
+        className="bg-red-500 hover:bg-red-600 disabled:bg-slate-600  transition px-6 py-3 rounded-xl text-white mt-6 w-full"
       onClick={generateNotes} disabled={loading}>
        {loading ? "Generating..." : "Generate Notes"}
       </button>
