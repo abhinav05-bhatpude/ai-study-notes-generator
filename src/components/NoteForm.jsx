@@ -3,7 +3,12 @@ import { useContext } from 'react';
 import NotesContext from '../context/NotesContext';
 
 const NoteForm = () => {
-  const { topic, setTopic } = useContext(NotesContext);
+ const {
+  topic,
+  setTopic,
+  difficulty,
+  setDifficulty,
+} = useContext(NotesContext);
   return (
 
     <div className="bg-slate-800 p-6 rounded-2xl w-full max-w-2xl">
@@ -17,6 +22,7 @@ const NoteForm = () => {
 
       <select
         className="w-full p-4 rounded-xl bg-slate-900 text-white outline-none"
+        value={difficulty} onChange={(e) => setDifficulty(e.target.value)}
       >
         <option>Beginner</option>
         <option>Intermediate</option>
