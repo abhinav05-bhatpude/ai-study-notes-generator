@@ -4,7 +4,7 @@ import NoteCard from '../components/NoteCard'
 
 const Home = () => {
   return (
-   <div className="flex flex-col items-center justify-center text-center mt-10 sm:mt-20 px-4">
+   <div className="flex flex-col items-center justify-center text-center mt-10 sm:mt-20 px-4 min-h-[80vh]">
     <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
 AI Study Notes Generator 📚
     </h1>
