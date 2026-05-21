@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 const App = () => {
   return (
     <BrowserRouter>
-    <div className="min-h-screen bg-slate-900 p-10">
+    <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
