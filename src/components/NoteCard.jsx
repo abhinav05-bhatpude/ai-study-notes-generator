@@ -6,7 +6,7 @@ const NoteCard = () => {
   const { topic, difficulty,notes,loading} = useContext(NotesContext);
 
   return (
-    <div className="bg-slate-800 p-6 rounded-2xl hover:scale-[1.02] hover:shadow-2xl transition duration-300">
+    <div className="bg-slate-800/80 backdrop-blur-lg p-6 rounded-3xl border border-slate-700 hover:scale-[1.02] hover:shadow-2xl transition duration-300">
         <h2 className="text-2xl font-bold mb-4">
             {topic || "Your Notes Will Appear Here"}
         </h2>
