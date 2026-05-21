@@ -13,7 +13,7 @@ const NoteCard = () => {
 
         <p className="text-slate-300 leading-8">
      {loading
-  ? "Generating AI notes..."
+  ? "🤖 AI is generating smart notes..."
   : notes || "Enter a topic to generate notes"}
         </p>
       
