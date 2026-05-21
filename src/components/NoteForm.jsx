@@ -15,12 +15,12 @@ const NoteForm = () => {
 
     <div className="bg-slate-800 p-6 rounded-2xl w-full max-w-2xl">
 
-      <input
-        type="text"
-        placeholder="Enter study topic..."
-        className="w-full p-4 rounded-xl bg-slate-900 text-white outline-none mb-5"
-        value={topic} onChange={(e) => setTopic(e.target.value)}
-      />
+    <textarea
+  placeholder="Enter study topic..."
+  className="w-full p-4 rounded-xl bg-slate-900 text-white outline-none mb-5 min-h-[120px] resize-none"
+  value={topic}
+  onChange={(e) => setTopic(e.target.value)}
+></textarea>
 
       <select
         className="w-full p-4 rounded-xl bg-slate-900 text-white outline-none"
